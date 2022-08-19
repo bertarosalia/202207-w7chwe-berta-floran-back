@@ -8,9 +8,9 @@
     "ts:dev": "tsc -w",
     "start": "node .",
     "start:dev": "nodemon -q",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test-dev": "jest src --watchAll",
-    "jest-coverage": "jest src --coverage"
+    "jest-coverage": "jest src --coverage --passWithNoTests"
   },
   "keywords": [],
   "author": "",
