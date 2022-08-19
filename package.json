@@ -8,7 +8,9 @@
     "ts:dev": "tsc -w",
     "start": "node .",
     "start:dev": "nodemon -q",
-    "test-coverage": "react-scripts test --coverage --watchAll=false"
+    "test": "jest",
+    "test-dev": "jest src --watchAll",
+    "jest-coverage": "jest src --coverage"
   },
   "keywords": [],
   "author": "",
