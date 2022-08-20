@@ -1,6 +1,6 @@
+import "../loadEnvironment";
 import chalk from "chalk";
 import Debug from "debug";
-
 import app from ".";
 import CustomError from "./utils/Custom Error";
 
