@@ -10,7 +10,9 @@ const connectDB = (mongoUrl: string) => new Promise ((resolve, reject) =>{
     virtuals:true,
     transform: (doc, ret) => {
       const newDocument = {...ret};
+       // eslint-disable-next-line no-underscore-dangle
        delete newDocument._v;
+        // eslint-disable-next-line no-underscore-dangle
        delete newDocument._id;
        delete newDocument.passwd;
        return newDocument;
