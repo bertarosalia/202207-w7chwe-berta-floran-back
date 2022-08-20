@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 
 const debug = Debug(users:database:index);
 
-const connectDB = (mongoUrl: string) => new Promise ((resolve, reject) =>{
+export const connectDB = (mongoUrl: string) => new Promise ((resolve, reject) =>{
   mongoose.set("toJSON", {
     virtuals:true,
     transform: (doc, ret) => {
@@ -28,4 +28,3 @@ const connectDB = (mongoUrl: string) => new Promise ((resolve, reject) =>{
       resolve(true);
   })
 })
-export default connectDB;

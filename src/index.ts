@@ -1,3 +1,4 @@
+import { connectDB } from "./database";
 import startServer from "./server/startServer";
 
 const port = +process.env.PORT || 4000;
