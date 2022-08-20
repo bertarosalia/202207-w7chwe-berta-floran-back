@@ -1,5 +1,5 @@
 {
-  "name": "red-social-berta-floran",
+  "name": "social-network-berta-floran",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
     "ts:dev": "tsc -w",
     "start": "node .",
     "start:dev": "nodemon -q",
-    "test": "jest --passWithNoTests",
+    "test": "jest",
     "test-dev": "jest src --watchAll",
     "jest-coverage": "jest src --coverage --passWithNoTests",
     "prepare": "husky install"
