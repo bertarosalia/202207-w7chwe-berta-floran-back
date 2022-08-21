@@ -15,8 +15,6 @@ describe("Given a custom error class", () => {
       expect(errorExpected).toHaveProperty("StatusCode", codeStatus);
       expect(errorExpected).toHaveProperty("message", privateMessage);
       expect(errorExpected).toHaveProperty("publicMessage", publicMessage);
-      // expect(errorExpected).toHaveProperty("message", privateMessage);
-      // expect(errorExpected).toHaveProperty("publicMessage", publicMessage);
     });
   });
 });
